@@ -1,0 +1,280 @@
+.footer {
+    background-color: $footer-background-color;
+    color: $footer-color;
+    padding-top: 85px;
+    padding-bottom: 90px;
+    @include desktop {
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+    @include tablet {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        font-family: $footer-font-family;
+        font-size: 0.9375em;
+        font-weight: 700;
+        padding: 0;
+        color: $lighterGray2;
+        @include desktop {
+            font-size: 0.9em;
+        }
+        @include tablet {
+            text-align: center;
+        }
+    }
+
+    &__block__one {
+
+        &__title {
+            font-family: $footer-block-one-logo-font-family;
+            font-size: 2.625em;
+            font-weight: 700;
+            background: -webkit-linear-gradient(left, #9a9a9a, #565656);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            @include desktop {
+                font-size: 2.525em;
+            }
+            @include tablet {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+        &__info {
+            font-family: $footer-block-one-font-family;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            font-size: 0.875em;
+            color: $lighterGray4;
+            @include desktop {
+                font-size: 0.85em;
+            }
+            @include tablet {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+
+    &__block__two {
+        padding-top: 10px;
+        @include clearfix;
+
+        &__list {
+            margin-top: 20px;
+            padding-left: 0;
+            margin-top: 55px;
+            @include tablet {
+                margin-top: 20px;
+                display: inline-block;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            li {
+                margin-bottom: 10px;
+                @include desktop {
+                    margin-bottom: 6px;
+                }
+
+                a {
+                    font-family: $footer-block-two-font-family;
+                    font-size: 0.875em;
+                    color: $lighterGray2;
+                    @include desktop {
+                        font-size: 0.85em;
+                    }
+                    &:before {
+                        content: '>';
+                        position: relative;
+                        left: -5px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__block__three {
+        padding-top: 10px;
+
+        &__post__container {
+            padding-top: 25px;
+            padding-bottom: 15px;
+            font-family: $footer-block-three-font-family;
+            border-bottom: 1px dashed $lighterGray2;
+            @include desktop {
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+            @include tablet {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            &.last {
+                border: 0;
+            }
+            p {
+                font-size: 0.875em;
+                font-weight: 600;
+                margin-bottom: 5px;
+                color: $lighterGray4;
+                @include desktop {
+                    font-size: 0.85em;
+                }
+            }
+
+            span {
+                font-size: 0.8125em;
+                font-style: italic;
+                color: $lighterGray2;
+                @include desktop {
+                    font-size: 0.78em;
+                }
+            }
+        }
+    }
+
+    &__block__four {
+
+        &__counter__container {
+            margin-bottom: 40px;
+            @include clearfix;
+            @include desktop {
+                margin-bottom: 30px;
+            }
+            @include tablet {
+                text-align: center;
+            }
+
+            div {
+                float: left;
+
+                &:last-child {
+                    float: right;
+                }
+
+                span {
+                    font-family: $footer-block-four-font-family;
+                    display: block;
+                }
+
+                .numbers {
+                    font-size: 1.75em;
+                    font-weight: 700;
+                    color: $lighterGray4;
+                    @include desktop {
+                        font-size: 1.5em;
+                    }
+                }
+
+                .info {
+                    font-size: 0.8125em;
+                    font-weight: 400;
+                    color: $lighterGray2;
+                    text-align: center;
+                    @include desktop {
+                        font-size: 0.78em;
+                    }
+                }
+            }
+        }
+
+        &__subscribe__container {
+            margin-bottom: 35px;
+
+            h1 {
+                font-family: $footer-block-four-font-family;
+                font-size: 0.875em;
+                font-weight: 400;
+                line-height: 1.4;
+                margin-bottom: 15px;
+                color: $lighterGray4;
+                @include desktop {
+                    font-size: 0.80em;
+                }
+                @include tablet {
+                    text-align: center;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .btn__group {
+
+                .message {
+                    height: 30px;
+                    border: 0;
+                    background-color: $grey7;
+                }
+
+                .input {
+                    height: 30px;
+                    border: 0;
+                    background-color: $grey4;
+                }
+
+                .subscribe {
+                    width: 70px;
+                    height: 30px;
+                    border: 0;
+                    color: $white;
+                    background-color: $green3;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &__social__container {
+
+            div {
+                float: left;
+                &:last-child {
+                    float: right;
+                    @include desktop {
+                        float: left;
+                        margin-top: 10px;
+                    }
+                    @include tablet {
+                        float: right;
+                        margin-top: 0;
+                    }
+                }
+
+                a {
+                    float: left;
+                    margin-right: 10px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                img {
+                    max-width: 40px;
+                }
+
+                span {
+                    padding-top: 5px;
+                    line-height: 1.6;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 0.6875em;
+                    font-weight: 700;
+                    float: right;
+                    width: 70px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+/*------- colors --------*/ 
+$grey: #333333;
+$grey2: #3f3f3f;
+$grey3: #444444;
+$grey4: #262626;
+$grey5: #707070;
+$grey6: #666666;
+$grey7: #1a1a1a;
+$lighterGray: #dddddd;
+$lighterGray2: #a0a0a0;
+$lighterGray3: #f2f0f0;
+$lighterGray4: #c2c2c2;
+$white: #ffffff;
+$black: #000000;
+$green: #1abc9c;
+$green2: #16a085;
+$green3: #5cb85c;
+$purple: #5d4157;
+
+/*--------- header variables ------------*/
+$header-font-color: $grey;
+$header-background: $white;
+$header-menu-font-color: $grey;
+$header-background-hover-color: $green;
+$header-border-hover-color: $green2;
+$header-logo-font-family: Open Sans, sans-serif;
+$header-menu-font-family: 'Raleway', sans-serif;
+
+/*----------- welcome variables -----------*/
+$welcome-font-family: 'Lato', sans-serif;
+$welcome-font-color: $white;
+
+
+/*---------- promo variables  ------------*/
+$promo-background-color: $purple;
+$promo-font-family: 'Lato', sans-serif;
+$promo-font-color: $white;
+
+
+/*---------- services variables  ------------*/
+$services-font-family: 'Raleway', sans-serif;
+$services-block-subheadline-font-family: 'Lato', sans-serif;
+$services-headline-color: $grey3;
+$services-subheadline-color: $lighterGray2;
+$services-block-subheadline-color: $grey5;
+
+/*---------- gallery variables  ------------*/
+$gallery-background-color: $lighterGray3;
+$gallery-btn-font-family: 'Lato', sans-serif;
+$gallery-box-title-font-family: 'Raleway', sans-serif;
+$gallery-box-title-color: $grey;
+$gallery-box-subtitle-font-family: 'Lato', sans-serif;
+$gallery-box-subtitle-color: $lighterGray2;
+$gallery-btn-background-color: $white;
+$gallery-btn-hover-background-color: $green;
+$gallery-btn-color: $grey;
+$gallery-btn-hover-color: $white;
+
+/*---------- footer variables  ------------*/
+$footer-font-family: 'Raleway', sans-serif;
+$footer-background-color: $grey;
+$footer-color: $white;
+
+$footer-block-one-font-family: 'Lato', sans-serif;
+$footer-block-one-logo-font-family: Open Sans, sans-serif;
+
+$footer-block-two-font-family: 'Lato', sans-serif;
+
+$footer-block-three-font-family: 'Raleway', sans-serif;
+
+$footer-block-four-font-family: 'Raleway', sans-serif;
+
+/*---------- copyrights variables  ------------*/
+$copyrights-background-color: $grey4;
+$copyrights-color: $grey6;
+$copyrights-font-family: 'Lato', sans-serif;
+
+
+/*------------- responsive break points  -----------*/ 
+$breakpoints: (
+	smallPhones: 560px,
+    phone: 768px,
+    tablet: 992px,
+    desktop: 1200px
+);

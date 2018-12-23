@@ -1,0 +1,18 @@
+.slider {
+	&__container {
+		padding-top: 60px;
+		padding-bottom: 60px;
+
+		img {
+			max-width: 80px;
+			margin: 0 auto;
+			@include desktop {
+				max-width: 100px;
+			}
+		}
+	}
+}
+
+.slick-slide {
+	outline: none;
+}
